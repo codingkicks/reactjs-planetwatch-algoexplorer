@@ -32,6 +32,10 @@ function Footer(props: {
                             </li>
                         </ul>
                     </Col>
+                    <Col sm={12} md={6}>
+                        <h3>About</h3>
+                        <p>&copy; Coding Kicks 2022</p>
+                    </Col>
                 </Row>
             </Container>
 
