@@ -1,0 +1,23 @@
+footer {
+    background: #222;
+    color: #eaeaea;
+    padding: 2rem 0;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            margin: 0;
+            padding: 0;
+            a {
+                text-decoration: none;
+                color: var(--bs-gray-200);
+                &:hover,
+                &:active,
+                &:focus {
+                    color: var(--bs-gray-600);
+                }
+            }
+        }
+    }
+}

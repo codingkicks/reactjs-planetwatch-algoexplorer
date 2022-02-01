@@ -1,0 +1,53 @@
+.ResultsPanel {
+    position: relative;
+}
+
+.Result {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 599px) {
+    .Result {
+        font-size: 0.75rem;
+        .ResultHeader,
+        .ResultItem {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            & > div:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .Result {
+        font-size: 1rem;
+        .ResultHeader,
+        .ResultItem {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
+}
+
+.ResultHeader,
+.ResultItem {
+    display: grid;
+    text-align: right;
+    & > div {
+        padding: 0.5rem 0.5rem;
+    }
+
+    & > div:first-child {
+        text-align: left;
+    }
+}
+.ResultHeader {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.ResultItem {
+    &:nth-child(odd) {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
