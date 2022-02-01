@@ -29,12 +29,16 @@ function RoadMapPanel(props: {
                 </Row>
                 <Row>
                     <Col>
-                        <h2 className="display-6">Feature Ideas</h2>
-                        <ul>
-                            <li>Add ability to store Algo account id for repeat lookups.</li>
-                            <li>Split PLANETS transactions into to groups using device id.</li>
-                            <li>Add graphs to display results by device, month, year etc.</li>
-                        </ul>
+                        <div className="jumbotron-sub jumbotron-fluid">
+                            <div className="container">
+                                <h2 className="display-6">Feature Ideas</h2>
+                                <ul>
+                                    <li>Add ability to store Algo account id for repeat lookups.</li>
+                                    <li>Split PLANETS transactions into to groups using device id.</li>
+                                    <li>Add graphs to display results by device, month, year etc.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </Col>
                 </Row>
                 <Row>
