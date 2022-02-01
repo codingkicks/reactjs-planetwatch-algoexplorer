@@ -32,6 +32,7 @@ function SearchPanel(props: {
 
         setLoadingProgress(0);
         setLoading(true);
+        setShowReports(false);
 
         peachTimer = setInterval(() => {
             if (loadingProgress >= 100) {
