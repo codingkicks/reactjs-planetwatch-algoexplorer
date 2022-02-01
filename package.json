@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/codingkicks/reactjs-planetwatch-algoexplorer/issues"
   },
-  "homepage": "https://github.com/codingkicks/reactjs-planetwatch-algoexplorer#readme",
+  "homepage": "https://planetwatch-algoexplorer.codingkicks.com/",
   "eslintConfig": {
     "extends": [
       "react-app",
