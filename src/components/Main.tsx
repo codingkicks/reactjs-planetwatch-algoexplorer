@@ -5,6 +5,7 @@ import './Main.scss';
 import { Transactions, TransactionSearchResults } from '../interfaces/Transactions';
 
 import WelcomePanel from "./WelcomePanel";
+import RoadMapPanel from "./RoadMapPanel";
 import SearchPanel from "./SearchPanel";
 import ResultsPanel from "./ResultsPanel";
 
@@ -55,6 +56,7 @@ function Main() {
             <WelcomePanel />
             <SearchPanel handleResults={displayResults} />
             <ResultsPanel results={transactionResults} />
+            <RoadMapPanel />
         </main>
     );
 }

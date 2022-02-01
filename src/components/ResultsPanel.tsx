@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 
 import './ResultsPanel.scss';
@@ -7,6 +8,15 @@ import { Transactions } from '../interfaces/Transactions';
 function ResultsPanel(props: {
     results: Transactions[] | undefined;
 }) {
+    const [resultsVisible, setResultsVisible] = useState(false);
+
+    useEffect(() => {
+        if (props.results && props.results.length > 0) {
+            setResultsVisible(true);
+        } else {
+            setResultsVisible(false);
+        }
+    }, [props.results]);
 
     const ResultsList = (props: {
         transactionData: Transactions[] | undefined
@@ -45,7 +55,7 @@ function ResultsPanel(props: {
         <Container>
             <Row>
                 <Col>
-                    <ResultsList transactionData={props.results} />
+                    {resultsVisible ? <ResultsList transactionData={props.results} /> : null}
                 </Col>
             </Row>
         </Container>

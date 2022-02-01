@@ -26,6 +26,15 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingkicks/reactjs-planetwatch-algoexplorer.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codingkicks/reactjs-planetwatch-algoexplorer/issues"
+  },
+  "homepage": "https://github.com/codingkicks/reactjs-planetwatch-algoexplorer#readme",
   "eslintConfig": {
     "extends": [
       "react-app",

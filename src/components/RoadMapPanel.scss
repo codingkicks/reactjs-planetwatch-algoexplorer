@@ -1,0 +1,34 @@
+.RoadMapPanel {
+}
+
+.donations {
+    .card-title {
+        display: flex;
+        padding: 0.25rem 0;
+        align-items: center;
+        & > img {
+            height: auto;
+            width: 32px;
+            margin-right: 0.5rem;
+        }
+    }
+    &.card-group {
+        justify-content: space-around;
+    }
+    .card-text {
+        font-size: 0.75rem;
+    }
+    .donation-qr {
+        max-width: 320px;
+        min-width: 256px;
+        margin: 0 auto 1rem;
+        border: none;
+    }
+}
+@media (min-width: 576px) {
+    .donations {
+        .donation-qr {
+            margin: 0 2rem 1rem;
+        }
+    }
+}

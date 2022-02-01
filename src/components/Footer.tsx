@@ -34,6 +34,11 @@ function Footer(props: {
                     </Col>
                     <Col sm={12} md={6}>
                         <h3>About</h3>
+                        <ul>
+                            <li>
+                                GitHub: <a href="https://github.com/codingkicks/reactjs-planetwatch-algoexplorer" target="_blank" rel="noreferrer">Source Code</a>
+                            </li>
+                        </ul>
                         <p>&copy; Coding Kicks 2022</p>
                     </Col>
                 </Row>
