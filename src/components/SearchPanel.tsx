@@ -14,6 +14,7 @@ function SearchPanel(props: {
     const [isLoading, setLoading] = useState(false);
     const [loadingProgress, setLoadingProgress] = useState(0);
     const [show, setShow] = useState(false);
+    const [showReports, setShowReports] = useState(false);
     const [showError, toggleErrorAlert] = useState(false);
     const [errorMessage, setErrorMessage] = useState("");
 
@@ -122,9 +123,9 @@ function SearchPanel(props: {
                             <Button variant="primary" id="button--search-algo" disabled={accountId === ''} onClick={handleSearch}>
                                 Search
                             </Button>
-                            <Button variant="secondary" id="button--search-algo" disabled={true}>
+                            {showReports ? <Button variant="secondary" id="button--search-algo" disabled={true}>
                                 Report
-                            </Button>
+                            </Button> : null}
                         </InputGroup>
                     </Col>
                 </Row>
